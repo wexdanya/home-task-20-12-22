@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Registration page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="form-section">
+        <div class="title-container">
+          <span class="line"></span>
+          <h2 class="register-title">Register</h2>
+          <span class="line"></span>
+        </div>
+        <p class="register-subtitle">Create your account. It`s free and only takes a minute.</p>
+        <form action="" method="get" class="form">
+          <div class="fullname">
+            <input type="text" placeholder="first name" required/>
+            <input type="text" placeholder="last name" required/>
+          </div>
+          <input type="email" name="email" id="email" placeholder="Email" required/>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Confirm Password"
+            required
+          />
+          <label class="privacy-label">
+            <input type="checkbox" name="chek" id="" />
+            I accpept the <a href="">Terms of Use</a> &
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="register-button">Register Now</button>
+        </form>
+      </section>
+      <span class="singin-link">Already have an account? <a href="">Sign in</a></span>
+    </div>
+  </body>
 </html>
